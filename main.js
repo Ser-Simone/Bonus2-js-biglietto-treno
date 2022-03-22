@@ -7,18 +7,34 @@ let pippo = 0;
 console.info(numeroPC);
 
 
-somma = numero + numeroPC;
+somma = parseInt(numero) + numeroPC;
 alert("la somma è" + somma);
 pippo= somma%2;
+console.info(pippo);
 
-switch (selezione)
+if((pippo == 0) && (selezione == 'pari'))
+{
+    alert("Hai vinto");
+}else if ((pippo == 1) && (selezione == 'pari'))
+{
+    alert("Hai perso")
+} else if ((pippo == 1) && (selezione == 'dispari'))
+{
+    alert("Hai vinto");
+} else if ((pippo == 0) && (selezione == 'dispari'))
+{
+    alert("Hai perso");
+}
+
+/*switch (selezione)
 {
     case "pari || Pari":
     if ( pippo == 0)
     {
         alert("Hai vinto");
     }
-    else { alert("Hai perso") }
+    else { alert("Hai perso") } 
+    break;
 
     case "dispari || Dispari" :
     if (pippo==1)
@@ -26,4 +42,5 @@ switch (selezione)
         alert("Hai vinto");
     } 
     else { alert("Hai perso") }
-}
+    break;
+}*/
